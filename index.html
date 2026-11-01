@@ -3,109 +3,176 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tara Kumawat | Security Operations Portfolio</title>
-<meta name="description" content="Security operations portfolio: incident investigations, SIEM lab and detection work.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
-<link rel="stylesheet" href="style.css">
+<title>Tara Kumawat | Aspiring SOC Analyst</title>
+<meta name="description" content="IT administrator moving into security operations. Incident investigation across email, identity and firewall logs. Security+ and CCNA.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f7f8fa; --card:#ffffff; --ink:#18212f; --mute:#566070; --line:#dce1e8;
+  --accent:#1d5f8f; --accent-ink:#ffffff; --tag:#e8eef5;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#10161e; --card:#171f29; --ink:#e8edf3; --mute:#9aa7b6; --line:#2a3542;
+         --accent:#7db4e0; --accent-ink:#0d1722; --tag:#212c39; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--accent)}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:20px;overflow-x:auto;padding-top:12px;padding-bottom:12px;white-space:nowrap}
+nav a{color:var(--mute);text-decoration:none;font-size:.92rem}
+nav a:hover{color:var(--ink)}
+header{padding:72px 0 48px}
+.mono{font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;font-size:.85rem;color:var(--accent);margin:0 0 14px}
+h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em}
+.lead{font-size:1.15rem;color:var(--mute);max-width:60ch;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.95rem;
+  border:1px solid var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-size:1.5rem;margin:0 0 22px;letter-spacing:-.01em}
+h3{font-size:1.08rem;margin:0 0 8px}
+p{margin:0 0 14px;max-width:70ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px}
+.card p{font-size:.95rem;color:var(--mute);margin-bottom:10px}
+.card .label{font-weight:600;color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tags span{background:var(--tag);border-radius:4px;padding:2px 9px;font-size:.8rem;color:var(--mute)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.skills h3{font-size:.95rem;color:var(--accent);margin-bottom:6px}
+.skills p{font-size:.95rem;margin:0}
+.job{margin-bottom:26px}
+.job .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px 16px}
+.job .when{color:var(--mute);font-size:.9rem}
+ul{margin:8px 0 0;padding-left:20px;max-width:75ch}
+li{margin-bottom:6px}
+footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
+.links a{margin-right:18px;display:inline-block}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{nav,.btns{display:none}body{background:#fff;color:#000}}
+</style>
 </head>
 <body>
-<header class="nav">
-  <a href="#top" class="logo">tara<span>@soc</span>:~$</a>
-  <nav>
-    <a href="#about">About</a><a href="#projects">Projects</a><a href="#competitions">Competitions</a>
-    <a href="#learning">Learning</a><a href="#certs">Certs</a><a href="#community">Community</a><a href="#contact">Contact</a>
-  </nav>
-</header>
+<nav aria-label="Sections"><div class="wrap">
+  <a href="#about">About</a><a href="#cases">Investigations</a><a href="#skills">Skills</a>
+  <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</div></nav>
 
-<main id="top">
-<section class="hero wrap">
-  <p class="eyebrow">Security Operations | Incident Response | Detection</p>
+<header><div class="wrap">
+  <p class="mono">aspiring SOC analyst · Jaipur, India</p>
   <h1>Tara Kumawat</h1>
-  <p class="lead">I investigate real incidents, learn from the logs, and turn what I find into better detections.</p>
-  <div class="term" aria-hidden="true">
-    <div><span class="p">$</span> whoami</div><div class="o">it-admin → soc-analyst (in progress)</div>
-    <div><span class="p">$</span> ls projects/</div><div class="o">m365-device-code/  firewall-bruteforce/  udp-flood/  wazuh-lab/</div>
-    <div><span class="p">$</span> <span class="cur"></span></div>
-  </div>
+  <p class="lead">IT administrator moving into security operations. I learn by investigating: following an email, a login or a firewall alert through the logs until the story is clear.</p>
   <div class="btns">
-    <a class="btn primary" href="#projects">View projects</a>
-    <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
-    <a class="btn" href="https://linkedin.com/in/tarak-112132208" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn" href="https://medium.com/@kumawattara1213" target="_blank" rel="noopener">Medium</a>
+    <a class="btn primary" href="Tara_Kumawat_Resume_SOC.pdf">Download résumé</a>
+    <a class="btn" href="https://www.linkedin.com/in/tarak-112132208">LinkedIn</a>
+    <a class="btn" href="https://medium.com/@kumawattara1213">Writing on Medium</a>
   </div>
-</section>
+</div></header>
 
-<section id="about" class="wrap reveal">
-  <h2><span>01</span> About</h2>
-  <div class="about">
-   <p>As an IT Administrator, I handle security incidents hands-on: a Microsoft 365 account takeover, a firewall under constant brute-force attack, and a UDP flood that overloaded a FortiGate. Working them end to end is what pulled me toward security operations.</p>
-    <p>I enjoy the detective part: reading sign-in and firewall logs, finding the root cause, and writing down what happened so it does not happen twice.</p>
-    <ul class="now">
-      <li><b>Building</b> a Wazuh SIEM lab and a library of detections</li>
-      <li><b>Learning</b> KQL (Microsoft Sentinel) and SPL (Splunk)</li>
-      <li><b>Aiming for</b> a SOC analyst role</li>
+<main>
+<section id="about"><div class="wrap">
+  <h2>About</h2>
+  <p>I have three years of experience administering Windows Server, a FortiGate firewall and Microsoft 365. Security became the part of the work I enjoyed most, so I now investigate real incidents, document them with MITRE ATT&amp;CK mapping, and practise detection in a Wazuh SIEM lab.</p>
+  <p>I hold CompTIA Security+ and CCNA, and I write about what I learn so that I have to understand it properly. I’m looking for an entry-level SOC analyst role where I can triage alerts, analyse phishing and grow into incident response.</p>
+</div></section>
+
+<section id="cases"><div class="wrap">
+  <h2>Investigations</h2>
+  <p>Real cases from my work, with identifying details removed.</p>
+  <div class="grid">
+    <article class="card">
+      <h3>Microsoft 365 account takeover</h3>
+      <p><span class="label">Situation.</span> A fraudulent email went out from a real employee’s mailbox and passed SPF, DKIM and DMARC.</p>
+      <p><span class="label">What I did.</span> Read the headers, pivoted to Entra ID sign-in logs, then to the device and Purview audit logs. Found device code phishing, a rogue registered device and token persistence that survived a password reset. Revoked sessions, removed the device, and searched the tenant by attacker IP for other affected accounts.</p>
+      <p><span class="label">Takeaway.</span> A password reset isn’t containment, and passing email authentication doesn’t mean a message is safe.</p>
+      <div class="tags"><span>Entra ID</span><span>Purview</span><span>Exchange</span><span>MITRE ATT&amp;CK</span></div>
+    </article>
+    <article class="card">
+      <h3>Firewall brute-force attack</h3>
+      <p><span class="label">Situation.</span> A recurring daily network outage.</p>
+      <p><span class="label">What I did.</span> Reviewed FortiGate authentication logs and found 5–10 login attempts per second from several countries against an internet-exposed HTTPS management port. Confirmed the exposure on Shodan, checked the IPs on AbuseIPDB, and closed the port.</p>
+      <p><span class="label">Takeaway.</span> Management interfaces don’t belong on the internet.</p>
+      <div class="tags"><span>FortiGate</span><span>Shodan</span><span>AbuseIPDB</span></div>
+    </article>
+    <article class="card">
+      <h3>UDP flood and firewall CPU</h3>
+      <p><span class="label">Situation.</span> A FortiGate 80F running at high CPU.</p>
+      <p><span class="label">What I did.</span> Traced the bottleneck in the anomaly logs to a UDP flood, applied a hardware-accelerated DoS policy and cross-referenced the malicious IPs. CPU load dropped from 85% to 15%.</p>
+      <p><span class="label">Takeaway.</span> Read the anomaly logs before changing anything.</p>
+      <div class="tags"><span>FortiGate 80F</span><span>DoS policy</span></div>
+    </article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Security monitoring</h3><p>Wazuh SIEM, Windows event and Sysmon logs, firewall logs, Entra ID sign-in logs, Purview audit logs, alert triage</p></div>
+    <div><h3>Incident response</h3><p>Investigation across email, identity and device logs, containment, evidence handling, incident reports</p></div>
+    <div><h3>Email and identity security</h3><p>Phishing and header analysis, SPF/DKIM/DMARC, MFA, Conditional Access basics, Microsoft 365</p></div>
+    <div><h3>Threat intelligence</h3><p>MITRE ATT&amp;CK mapping, AbuseIPDB, Shodan</p></div>
+    <div><h3>Networking</h3><p>TCP/IP, routing and switching, VLANs, subnetting, FortiGate policies, segmentation</p></div>
+    <div><h3>Systems</h3><p>Windows Server, Windows 11, Linux (Ubuntu, Kali)</p></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="row"><h3>IT Administrator, Dileep Crafts Private Limited</h3><span class="when">Sep 2023 – present</span></div>
+    <ul>
+      <li>Administer the Windows Server environment, network infrastructure and endpoints, and manage firewall security.</li>
+      <li>Investigate security incidents and document them with threat-intelligence enrichment and hardening recommendations.</li>
+      <li>Enabled MFA, published DMARC in monitoring mode, and connected Microsoft 365 audit logs to Wazuh.</li>
     </ul>
   </div>
-</section>
-
-<section id="projects" class="wrap reveal">
-  <h2><span>02</span> Projects</h2>
-  <p class="sub">Real investigations and lab work. Select a card for the full story.</p>
-  <div id="projectGrid" class="grid"></div>
-</section>
-
-<section id="competitions" class="wrap reveal">
-  <h2><span>03</span> Cybersecurity Competitions</h2>
-  <div class="grid" id="compGrid"></div>
-</section>
-
-<section id="learning" class="wrap reveal">
-  <h2><span>04</span> Practical Learning</h2>
-  <p class="sub">Hands-on labs, kept separate from certifications.</p>
-  <div class="stats">
-    <div class="card"><div class="num">TODO</div><div>TryHackMe rooms completed</div></div>
-    <div class="card"><div class="num">TODO</div><div>Other platform labs</div></div>
-    <div class="card"><div class="num">4</div><div>Self-built lab and incident write-ups</div></div>
+  <div class="job">
+    <div class="row"><h3>IT Administrator Intern, Applied Electro-Magnetics</h3><span class="when">Jan – Jun 2023</span></div>
+    <ul><li>Ubuntu systems and hardware troubleshooting.</li></ul>
   </div>
-  <div class="card">
-    <h3>Areas covered</h3>
-    <div class="tags" id="areas"></div>
-    <div class="btns small">
-      <span class="btn ph">TryHackMe profile link (placeholder)</span>
-      <span class="btn ph">Selected write-up (placeholder)</span>
-    </div>
+  <div class="job">
+    <div class="row"><h3>Technical Support Executive Intern, Ensonic Computech</h3><span class="when">Feb – Jul 2022</span></div>
+    <ul><li>Hardware and technical support.</li></ul>
   </div>
-</section>
+  <p><strong>Education:</strong> B.Voc in Information Technology and Networking, Bhartiya Skill Development University (2020–2023).<br>
+     <strong>Certifications:</strong> CompTIA Security+, Cisco CCNA, Fortinet NSE 1 and NSE 2.</p>
+</div></section>
 
-<section id="certs" class="wrap reveal">
-  <h2><span>05</span> Certifications</h2>
-  <div class="grid" id="certGrid"></div>
-</section>
-
-<section id="community" class="wrap reveal">
-  <h2><span>06</span> Achievements and Community</h2>
-  <div class="grid" id="commGrid"></div>
-</section>
-
-<section id="contact" class="wrap reveal">
-  <h2><span>07</span> Contact</h2>
-  <div class="card contact">
-    <p>Open to SOC analyst and security operations roles. Say hello.</p>
-    <div class="btns">
-      <a class="btn primary" href="mailto:kumawattara1213@gmail.com">kumawattara1213@gmail.com</a>
-      <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://linkedin.com/in/tarak-112132208" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
+<section id="projects"><div class="wrap">
+  <h2>Projects and writing</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>SOC home lab with Wazuh</h3>
+      <p>An Ubuntu Wazuh manager with Windows 11 and Kali Linux agents, plus the Microsoft 365 audit feed connected through the Office 365 module.</p>
+      <div class="tags"><span>Wazuh</span><span>Sysmon</span><span>Microsoft 365</span></div>
+    </article>
+    <article class="card">
+      <h3>TryHackMe Advent of Cyber</h3>
+      <p>Completed the 24-day challenge. <a href="https://tryhackme.com/p/t.a.r.a">Profile</a></p>
+    </article>
+    <article class="card">
+      <h3>Technical writing</h3>
+      <p>Articles on device code phishing, FortiGate brute-force and UDP-flood incidents, the Windows process tree and fileless malware. <a href="https://medium.com/@kumawattara1213">Read on Medium</a></p>
+    </article>
   </div>
-</section>
+</div></section>
 </main>
 
-<footer class="wrap foot">© <span id="yr"></span> Tara Kumawat. Incident details are sanitized.</footer>
-
-<dialog id="modal" aria-labelledby="mTitle">
-  <button class="close" id="mClose" aria-label="Close">×</button>
-  <div id="mBody"></div>
-</dialog>
-<script src="script.js"></script>
+<footer id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="links">
+    <a href="mailto:kumawattara1213@gmail.com">kumawattara1213@gmail.com</a>
+    <a href="https://www.linkedin.com/in/tarak-112132208">LinkedIn</a>
+    <a href="https://github.com/tarakumawat">GitHub</a>
+    <a href="https://medium.com/@kumawattara1213">Medium</a>
+  </p>
+  <p>Case studies are anonymised. No company, user or network details are shown.</p>
+</div></footer>
 </body>
 </html>
